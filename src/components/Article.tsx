@@ -3,6 +3,7 @@ import { AppScreen } from "@stackflow/plugin-basic-ui";
 
 type ArticleParams = {
   title: string;
+  articleId: string;
 };
 const Article: ActivityComponentType<ArticleParams> = ({ params }) => {
   console.log("🚀 ~ params:", params);

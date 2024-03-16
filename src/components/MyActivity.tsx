@@ -13,6 +13,7 @@ const MyActivity: ActivityComponentType = () => {
   const onClick = () => {
     push("Article", {
       title: "Hello",
+      articleId: "1",
     });
     // replace("Article", {
     //   title: "Hello",
