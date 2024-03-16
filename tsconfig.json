@@ -16,9 +16,7 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "preserve",
-    "paths": {
-      "~/*": ["./src/*"]
-    },
+    "paths": {},
     "incremental": true
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],

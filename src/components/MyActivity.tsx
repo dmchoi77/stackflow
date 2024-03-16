@@ -1,9 +1,14 @@
-import { ActivityComponentType } from "@stackflow/react";
+import { ActivityComponentType, useActivity, useStack } from "@stackflow/react";
 import { AppScreen } from "@stackflow/plugin-basic-ui";
 import { useFlow } from "../stackflow";
 
 const MyActivity: ActivityComponentType = () => {
-  const { push, replace } = useFlow();
+  const { push } = useFlow();
+  const activity = useActivity();
+  console.log("🚀 ~ activity:", activity);
+
+  const stack = useStack();
+  console.log("🚀 ~ stack:", stack);
 
   const onClick = () => {
     push("Article", {
